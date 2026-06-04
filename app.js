@@ -615,7 +615,7 @@ function renderTest() {
   `;
 
   answerKey.innerHTML = `
-    <h2>Правильные ответы</h2>
+    <h2></h2>
     <ol>
       
     </ol>
