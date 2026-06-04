@@ -617,7 +617,7 @@ function renderTest() {
   answerKey.innerHTML = `
     <h2>Правильные ответы</h2>
     <ol>
-      ${courseData.test.questions.map((question, index) => renderAnswerKey(question, index)).join("")}
+      
     </ol>
   `;
 
