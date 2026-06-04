@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курс разработки игр на Unreal Engine 5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <div class="site-bg"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">UE5</span>
+      <span class="brand-text">Курс разработки игр на Unreal Engine 5</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html" data-nav="home">Главная</a>
+      <a href="program.html" data-nav="program">Программа</a>
+      <a href="lectures.html" data-nav="lectures">Лекции</a>
+      <a href="practice.html" data-nav="practice">Практика</a>
+      <a href="project.html" data-nav="project">Итоговый проект</a>
+      <a href="test.html" data-nav="test">Тест</a>
+      <a href="dashboard.html" data-nav="dashboard">Кабинет</a>
+    </nav>
+    <div class="header-progress">
+      <span>Прогресс курса</span>
+      <strong data-progress-label>0%</strong>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero hero-home">
+      <div class="hero-copy">
+        <p class="eyebrow">Онлайн-программа уровня Junior Game Developer</p>
+        <h1>Освойте Unreal Engine 5 и соберите свою первую игровую систему от сцены до релиза</h1>
+        <p class="hero-text">
+          Многостраничный курс собран как учебная платформа: с подробными лекциями, практикой,
+          итоговым проектом, тестированием и личным кабинетом, где сохраняется ваш прогресс.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="program.html">Изучить программу</a>
+          <a class="button button-secondary" href="dashboard.html">Открыть кабинет</a>
+        </div>
+        <div class="hero-metrics">
+          <article class="metric-card">
+            <span>Лекций</span>
+            <strong data-course-lectures>6</strong>
+          </article>
+          <article class="metric-card">
+            <span>Практик</span>
+            <strong data-course-practices>8</strong>
+          </article>
+          <article class="metric-card">
+            <span>Тестовых вопросов</span>
+            <strong data-course-questions>40</strong>
+          </article>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <div class="panel-glow"></div>
+        <h2>Что внутри платформы</h2>
+        <ul class="feature-list">
+          <li>Полные русскоязычные лекции без заглушек</li>
+          <li>Подробные практические работы по шагам</li>
+          <li>Мини-игра «Фермерское хозяйство» как итоговый проект</li>
+          <li>Автоподсчет теста и сохранение результатов через LocalStorage</li>
+        </ul>
+        <div class="progress-widget">
+          <div class="progress-caption">
+            <span>Готовность курса</span>
+            <strong data-progress-label>0%</strong>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-progress-fill></div>
+          </div>
+          <p>Отмечайте лекции и практику как пройденные, чтобы видеть реальный темп обучения.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Формат обучения</p>
+        <h2>Платформа построена как маршрут от первого запуска редактора до упаковки проекта</h2>
+      </div>
+      <div class="card-grid" id="home-highlights"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Лекции</p>
+        <h2>Ключевые модули курса</h2>
+      </div>
+      <div class="card-grid card-grid-wide" id="home-featured-lectures"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Практика</p>
+        <h2>Навык закрепляется не конспектом, а пошаговой сборкой игровых систем</h2>
+      </div>
+      <div class="card-grid" id="home-practices"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Курс разработки игр на Unreal Engine 5</p>
+    <p>Прогресс и результаты сохраняются локально в браузере.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

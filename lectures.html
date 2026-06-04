@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лекции | Курс разработки игр на Unreal Engine 5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="lectures">
+  <div class="site-bg"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">UE5</span>
+      <span class="brand-text">Курс разработки игр на Unreal Engine 5</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html" data-nav="home">Главная</a>
+      <a href="program.html" data-nav="program">Программа</a>
+      <a href="lectures.html" data-nav="lectures">Лекции</a>
+      <a href="practice.html" data-nav="practice">Практика</a>
+      <a href="project.html" data-nav="project">Итоговый проект</a>
+      <a href="test.html" data-nav="test">Тест</a>
+      <a href="dashboard.html" data-nav="dashboard">Кабинет</a>
+    </nav>
+    <div class="header-progress">
+      <span>Прогресс курса</span>
+      <strong data-progress-label>0%</strong>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-intro">
+      <p class="eyebrow">Раздел лекций</p>
+      <h1>Подробные учебные материалы по Unreal Engine 5</h1>
+      <p>
+        Каждая лекция оформлена как отдельная страница: теория, практические примеры,
+        Blueprint-логика, типичные ошибки и итог урока.
+      </p>
+      <div class="progress-track">
+        <div class="progress-fill" data-progress-fill></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="card-grid card-grid-wide" id="lecture-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Курс разработки игр на Unreal Engine 5</p>
+    <p>Отмечайте материалы как пройденные прямо внутри лекций.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

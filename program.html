@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Программа обучения | Курс разработки игр на Unreal Engine 5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="program">
+  <div class="site-bg"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">UE5</span>
+      <span class="brand-text">Курс разработки игр на Unreal Engine 5</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html" data-nav="home">Главная</a>
+      <a href="program.html" data-nav="program">Программа</a>
+      <a href="lectures.html" data-nav="lectures">Лекции</a>
+      <a href="practice.html" data-nav="practice">Практика</a>
+      <a href="project.html" data-nav="project">Итоговый проект</a>
+      <a href="test.html" data-nav="test">Тест</a>
+      <a href="dashboard.html" data-nav="dashboard">Кабинет</a>
+    </nav>
+    <div class="header-progress">
+      <span>Прогресс курса</span>
+      <strong data-progress-label>0%</strong>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-intro">
+      <p class="eyebrow">Программа курса</p>
+      <h1>Шесть лекций, восемь практик, итоговый проект и финальное тестирование</h1>
+      <p>
+        Программа построена по принципу образовательной платформы: сначала фундамент и
+        интерфейс движка, затем Blueprint, персонаж, механики, финальная подготовка к релизу.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="timeline-grid" id="program-timeline"></div>
+    </section>
+
+    <section class="section split-section">
+      <article class="surface-card">
+        <div class="section-heading compact">
+          <p class="eyebrow">Навыки</p>
+          <h2>Что освоит студент</h2>
+        </div>
+        <div id="program-skills" class="chip-cloud"></div>
+      </article>
+      <article class="surface-card">
+        <div class="section-heading compact">
+          <p class="eyebrow">Путь</p>
+          <h2>Как выглядит маршрут обучения</h2>
+        </div>
+        <div id="program-path" class="stack-list"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Курс разработки игр на Unreal Engine 5</p>
+    <p>Вся программа доступна офлайн как статический многостраничный сайт.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

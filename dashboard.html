@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет | Курс разработки игр на Unreal Engine 5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="dashboard">
+  <div class="site-bg"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">UE5</span>
+      <span class="brand-text">Курс разработки игр на Unreal Engine 5</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html" data-nav="home">Главная</a>
+      <a href="program.html" data-nav="program">Программа</a>
+      <a href="lectures.html" data-nav="lectures">Лекции</a>
+      <a href="practice.html" data-nav="practice">Практика</a>
+      <a href="project.html" data-nav="project">Итоговый проект</a>
+      <a href="test.html" data-nav="test">Тест</a>
+      <a href="dashboard.html" data-nav="dashboard">Кабинет</a>
+    </nav>
+    <div class="header-progress">
+      <span>Прогресс курса</span>
+      <strong data-progress-label>0%</strong>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero hero-dashboard">
+      <div class="hero-copy">
+        <p class="eyebrow">Личный кабинет студента</p>
+        <h1>Отслеживайте прогресс прохождения курса и возвращайтесь к следующему шагу</h1>
+        <p>
+          Здесь отображаются выполненные лекции, практические задания, финальный проект
+          и результат тестирования. Все данные сохраняются через LocalStorage.
+        </p>
+      </div>
+      <aside class="hero-panel compact-panel">
+        <div class="ring-progress" data-ring-progress>
+          <span data-progress-label>0%</span>
+        </div>
+        <p>Общий прогресс обучения</p>
+      </aside>
+    </section>
+
+    <section class="section dashboard-grid">
+      <article class="surface-card" id="dashboard-summary"></article>
+      <article class="surface-card" id="dashboard-breakdown"></article>
+      <article class="surface-card" id="dashboard-next"></article>
+      <article class="surface-card" id="dashboard-results"></article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Курс разработки игр на Unreal Engine 5</p>
+    <p>Вы можете закрыть сайт и вернуться позже: отметки останутся на этом устройстве.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

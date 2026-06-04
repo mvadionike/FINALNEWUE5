@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проверка изображений</title>
+  <style>
+    body{font-family:Segoe UI,sans-serif;background:#0b1117;color:#f3f6fb;margin:0;padding:24px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .card{background:#111a24;border:1px solid #233243;border-radius:16px;padding:12px}
+    img{width:100%;border-radius:10px;display:block}
+    code{color:#8bd3ff}
+    a{color:#8bd3ff}
+  </style>
+</head>
+<body>
+  <h1>Проверка изображений</h1>
+  <p>Если эти изображения открываются на GitHub Pages, значит папки <code>1-100</code> и <code>101-200</code> загружена правильно.</p>
+  <p><a href="index.html">На главную</a></p>
+  <div class="grid">
+    <div class="card"><img src="1-100/1.jpg" alt="1"><p>1-100/1.jpg</p></div>
+    <div class="card"><img src="1-100/26.png" alt="26"><p>1-100/26.png</p></div>
+    <div class="card"><img src="1-100/74.jpg" alt="74"><p>1-100/74.jpg</p></div>
+    <div class="card"><img src="101-200/101.jpg" alt="101"><p>101-200/101.jpg</p></div>
+    <div class="card"><img src="101-200/112.png" alt="112"><p>101-200/112.png</p></div>
+    <div class="card"><img src="101-200/117.png" alt="117"><p>101-200/117.png</p></div>
+  </div>
+</body>
+</html>

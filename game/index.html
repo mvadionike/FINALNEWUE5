@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фермерское хозяйство</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-glow"></div>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Итоговый проект курса</p>
+      <h1>Фермерское хозяйство</h1>
+      <p class="subtitle">Мини-игра по мотивам проекта из курса Unreal Engine 5: перемещение, обработка земли, посадка, полив, рост, сбор урожая, продажа и покупка семян.</p>
+    </div>
+    <div class="topbar-actions">
+      <a class="ghost-link" href="../index.html">На главную сайта</a>
+      <a class="ghost-link" href="../index.html">На главную курса</a>
+      <a class="ghost-link" href="../project.html">Вернуться к описанию проекта</a>
+      <button id="reset-game" class="secondary-button" type="button">Сбросить прогресс</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="game-panel">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Игровое поле</p>
+          <h2>Ферма</h2>
+        </div>
+        <div class="legend">
+          <span class="legend-chip plot-empty">Пустая грядка</span>
+          <span class="legend-chip plot-tilled">Обработано</span>
+          <span class="legend-chip plot-planted">Посажено</span>
+          <span class="legend-chip plot-watered">Поливается</span>
+          <span class="legend-chip plot-grown">Готово к сбору</span>
+        </div>
+      </div>
+
+      <div id="board" class="board" aria-label="Игровое поле"></div>
+
+      <div class="control-bar">
+        <button class="control-button" data-move="up" type="button">↑</button>
+        <div class="control-row">
+          <button class="control-button" data-move="left" type="button">←</button>
+          <button class="control-button primary-button" id="interact-button" type="button">Действие</button>
+          <button class="control-button" data-move="right" type="button">→</button>
+        </div>
+        <button class="control-button" data-move="down" type="button">↓</button>
+      </div>
+
+      <div class="hint-box">
+        <p class="eyebrow">Управление</p>
+        <p><strong>Клавиши:</strong> <code>WASD</code> или стрелки для движения, <code>E</code> / <code>Пробел</code> для действия.</p>
+        <p><strong>Задача:</strong> заработайте <span id="goal-money">120</span> монет, покупая семена, выращивая и продавая урожай.</p>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <section class="card stats-card">
+        <p class="eyebrow">Статистика</p>
+        <h2>Хозяйство</h2>
+        <div class="stats-grid">
+          <article>
+            <span>Монеты</span>
+            <strong id="money-value">0</strong>
+          </article>
+          <article>
+            <span>Семена</span>
+            <strong id="seed-value">0</strong>
+          </article>
+          <article>
+            <span>Вода</span>
+            <strong id="water-value">0</strong>
+          </article>
+          <article>
+            <span>Урожай</span>
+            <strong id="harvest-value">0</strong>
+          </article>
+        </div>
+        <div class="progress-block">
+          <div class="progress-copy">
+            <span>Прогресс цели</span>
+            <strong id="progress-label">0%</strong>
+          </div>
+          <div class="progress-track"><div id="progress-fill" class="progress-fill"></div></div>
+        </div>
+      </section>
+
+      <section class="card action-card">
+        <p class="eyebrow">Текущее действие</p>
+        <h2 id="action-title">Подойдите к объекту</h2>
+        <p id="action-description">Встаньте на клетку с грядкой, колодцем, магазином или рынком и нажмите кнопку действия.</p>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow">Локации</p>
+        <ul class="location-list">
+          <li><strong>Магазин семян</strong>: покупка 1 семени за 5 монет.</li>
+          <li><strong>Колодец</strong>: пополнение воды до 5 единиц.</li>
+          <li><strong>Рынок</strong>: продажа всего урожая по 9 монет за штуку.</li>
+          <li><strong>Грядки</strong>: обработайте землю, посадите семена, полейте и дождитесь роста.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow">Журнал</p>
+        <div id="event-log" class="event-log"></div>
+      </section>
+    </aside>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
